@@ -1,6 +1,6 @@
 ## nextfire-app
 
-This is a personal project designed to be a standard forum/blog website with the usage of [ReactJS](https://reactjs.org/), [Next.JS](https://nextjs.org/) and [Google firebase] (https://firebase.google.com/?gclid=Cj0KCQjwidSWBhDdARIsAIoTVb25L0sl4UJ0FFlL7pMqvGBtQgDmGdhSAHmCBvxlbbPlNgQGzohW7YsaAhoEEALw_wcB&gclsrc=aw.ds). 
+This is a personal project designed to be a standard forum/blog website with the usage of [ReactJS](https://reactjs.org/), [Next.JS](https://nextjs.org/) and [Google.firebase] (https://firebase.google.com). 
 
 ## Getting Started
 
