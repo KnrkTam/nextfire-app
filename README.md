@@ -1,14 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## nextfire-app
+
+This is a personal project designed to be a standard forum/blog website with the usage of [ReactJS](https://reactjs.org/), [Next.JS](https://nextjs.org/) and [Google firebase] (https://firebase.google.com/?gclid=Cj0KCQjwidSWBhDdARIsAIoTVb25L0sl4UJ0FFlL7pMqvGBtQgDmGdhSAHmCBvxlbbPlNgQGzohW7YsaAhoEEALw_wcB&gclsrc=aw.ds). 
 
 ## Getting Started
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
