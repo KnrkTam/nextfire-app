@@ -1,17 +1,12 @@
 ## nextfire-app
 
-This is a personal project designed to be a standard forum/blog website with the usage of [ReactJS](https://reactjs.org/), [Next.JS](https://nextjs.org/) and [Google.firebase] (https://firebase.google.com). 
+This is a personal project designed to be a standard forum/blog website with the usage of [ReactJS](https://reactjs.org/), [Next.JS](https://nextjs.org/) and [Firebase] (https://firebase.google.com). 
 
-## Getting Started
+## Frameworks
 
+[React] for front-end UI
+[Next] for server-side rendering, routing and all other concerns for the full-stack application
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 ## Learn More
 
