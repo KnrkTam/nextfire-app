@@ -1,16 +1,23 @@
 import Link from 'next/link'
+import { useContext } from 'react';
+import { UserContext } from '../lib/context';
+import { auth } from '../lib/firebase';
+
 
 // Top navbar
 export default function Navbar() {
-  const user = null;
-  const username = null;
+
+  const { user, username } = useContext(UserContext)
+
+  // const user = null;
+  // const username = null;
 
   return (
     <nav className="navbar">
       <ul>
         <li>
           <Link href="/">
-            <button className="btn-logo">FEED</button>
+            <button className="btn-logo">Cool App</button>
           </Link>
         </li>
 
@@ -24,8 +31,11 @@ export default function Navbar() {
             </li>
             <li>
               <Link href={`/${username}`}>
-                <img src={user?.photoURL} />
+                <img src={user?.photoURL}  />
               </Link>
+            </li>
+            <li>
+              <SignOutButton />
             </li>
           </>
         )}
@@ -41,4 +51,9 @@ export default function Navbar() {
       </ul>
     </nav>
   );
+}
+
+// Sign out button
+function SignOutButton() {
+  return <button onClick={() => auth.signOut()}>Sign Out</button>;
 }
