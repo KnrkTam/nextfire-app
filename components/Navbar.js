@@ -25,17 +25,18 @@ export default function Navbar() {
         {username && (
           <>
             <li className="push-left">
+              <div style={{display: 'flex'}}>
+              <SignOutButton />
               <Link href="/admin">
                 <button className="btn-blue">Write Posts</button>
               </Link>
+              </div>
+           
             </li>
             <li>
               <Link href={`/${username}`}>
                 <img src={user?.photoURL}  />
               </Link>
-            </li>
-            <li>
-              <SignOutButton />
             </li>
           </>
         )}
