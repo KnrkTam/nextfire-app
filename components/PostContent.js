@@ -1,7 +1,8 @@
 import ReactMarkdown from 'react-markdown';
 import Link from 'next/link';
 
-export default function PostContent({ post}) {
+export default function PostContent({ post }) {
+  // console.log({post});
   const createdAt = typeof post?. createdAt === 'number' ? new Date(post.createdAt) : post.createdAt.toDate();
 
   return (
