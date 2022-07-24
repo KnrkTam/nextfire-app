@@ -4,6 +4,7 @@ import PostContent from '../../components/PostContent';
 import { firestore, getUserWithUsername, postToJSON } from "../../lib/firebase";
 import { useDocumentData } from 'react-firebase-hooks/firestore';
 import Metatags from '../../components/Metatags';
+import Link from 'next/link';
 
 
 export async function getStaticProps({ params }) {
@@ -54,7 +55,7 @@ export async function getStaticProps({ params }) {
     const [realtimePost] = useDocumentData(postRef);
 
     const post = realtimePost || props.post;
-    console.log(useDocumentData(postRef))
+    // console.log(useDocumentData(postRef))
     return (
       <main className={styles.container}>
         <Metatags title={post.title} description={post.title} />
@@ -63,8 +64,13 @@ export async function getStaticProps({ params }) {
         </section>
         <aside className='card'>
           <p>
-            <strong>{post.heartCount || 0} 💙 </strong>
+            <strong>{post.heartCount || 0} 🤍 </strong>
           </p>
+          <Link href={`/admin/${post.slug}`}>
+            <button className='btn-blue'>
+              Edit Post
+            </button>
+          </Link> 
         </aside>
      
       </main>
