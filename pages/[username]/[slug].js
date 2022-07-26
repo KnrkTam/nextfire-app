@@ -7,7 +7,8 @@ import Metatags from '../../components/Metatags';
 import Link from 'next/link';
 import HeartButton from '../../components/HeartButton';
 import AuthCheck  from '../../components/AuthCheck';
-
+import { useContext } from 'react';
+import { UserContext } from '../../lib/context';
  
 export async function getStaticProps({ params }) {
   const { username, slug } = params;
@@ -55,6 +56,8 @@ export async function getStaticProps({ params }) {
     const postRef = firestore.doc(props.path);
     const [realtimePost] = useDocumentData(postRef);
 
+    const { user: currentUser } = useContext(UserContext);
+
     const post = realtimePost || props.post;
     // console.log(useDocumentData(postRef))
     return (
@@ -65,7 +68,7 @@ export async function getStaticProps({ params }) {
         </section>
         <aside className='card'>
           <p>
-            <strong>{post.heartCount || 0} 🤍 </strong>
+            <strong>{post.heartCount || 0 } {post.heartCount ? '💙' : '🤍'} </strong>
           </p>
           <AuthCheck fallback={
               <Link href="/enter">
@@ -74,11 +77,15 @@ export async function getStaticProps({ params }) {
             }>
               <HeartButton postRef={postRef} />
           </AuthCheck>
-          <Link href={`/admin/${post.slug}`}>
+          
+          {currentUser?.uid == post.uid && 
+            (<Link href={`/admin/${post.slug}`}>
             <button className='btn-blue'>
               Edit Post
             </button>
-          </Link> 
+          </Link> )
+          }
+       
 
         </aside>
      
