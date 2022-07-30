@@ -68,7 +68,9 @@ function PostForm({ defaultValues, postRef, preview }) {
     });
     reset({ content, published});
 
+
     toast.success('Post updated successfully!')
+
   };
 
   return (
