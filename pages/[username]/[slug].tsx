@@ -9,6 +9,8 @@ import HeartButton from '../../components/HeartButton';
 import AuthCheck  from '../../components/AuthCheck';
 import { useContext } from 'react';
 import { UserContext } from '../../lib/context';
+import { GetStaticProps, GetStaticPaths } from 'next'
+
  
 export async function getStaticProps({ params }) {
   const { username, slug } = params;

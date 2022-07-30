@@ -2,7 +2,9 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 import 'firebase/compat/storage';
+
 import { exit } from 'process';
+
 
 const firebaseConfig = {
     apiKey: "AIzaSyCCVbcgwi5EFcMxWaZGp-ILMi1_kjGJUtA",
@@ -30,9 +32,6 @@ export const increment = firebase.firestore.FieldValue.increment;
 //Storage exports
 export const storage = firebase.storage();
 export const STATE_CHANGED = firebase.storage.TaskEvent.STATE_CHANGED;
-
-
-
 /// Helper functions
 /**`
  * Gets a users/{uid} document with username
@@ -58,7 +57,3 @@ export function postToJSON(doc) {
     updatedAt: data?.updatedAt.toMillis() || 0,
   };
 }
-
-
-
-

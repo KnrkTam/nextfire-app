@@ -20,16 +20,24 @@ export default function Navbar() {
             <button className="btn-logo">Blog-demo</button>
           </Link>
         </li>
-
+        {!username && (
+          <li className="push-left">
+            <div>
+              <BlogButton />
+            </div>
+          </li>
+        )}
+      
         {/* user is signed-in and has username */}
+
         {username && (
           <>
             <li className="push-left">
               <div style={{display: 'flex'}}>
+              <BlogButton />
+              <WritePostButton />
               <SignOutButton />
-              <Link href="/admin">
-                <button className="btn-blue">Write Posts</button>
-              </Link>
+
               </div>
            
             </li>
@@ -58,3 +66,17 @@ export default function Navbar() {
 function SignOutButton() {
   return <button onClick={() => auth.signOut()}>Sign Out</button>;
 }
+
+// Sign out button
+function BlogButton() {
+  return   <Link href="/blog">
+            <button className="btn-purple">Blogs</button>
+          </Link>;
+}
+
+function WritePostButton() {
+  return  <Link href="/admin">
+  <button className="btn-blue">Write Posts</button>
+</Link>
+}
+

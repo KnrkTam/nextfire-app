@@ -6,7 +6,8 @@
   --color-blue: #3b49df;
   --color-red: #df3b3b;
   --color-green: #3bdf72;
-  --color-gray: #b5bdc4;
+  --color-gray: #b5bdc4; 
+  --color-purple:  #7E3ADE;
 }
 html,
 body {
@@ -145,6 +146,11 @@ button.btn-red {
 
 button.btn-green {
   background-color: var(--color-green);
+  color: white;
+}
+
+button.btn-purple {
+  background-color: var(--color-purple);
   color: white;
 }
 
