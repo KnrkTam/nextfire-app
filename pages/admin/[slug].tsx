@@ -20,12 +20,11 @@ export default function AdminPostEdit({ }) {
   );
 }
 
-
 function PostManager() {
   const [preview, setPreview] = useState(false);
 
   const router = useRouter();
-  const { slug } = router.query;
+  const { slug }  = router.query;
 
   const postRef = firestore.collection('users').doc(auth.currentUser.uid).collection('posts').doc(slug);
   const [post] = useDocumentData(postRef);
