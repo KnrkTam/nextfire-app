@@ -13,7 +13,7 @@ export default function ImageUploader() {
 
         // Get file
         const file: any = Array.from(e.target.files)[0];
-        const extension = file.type.split('/')[1];
+        const extension :String  = file.type.split('/')[1];
 
         // Makes reference to the storage bucket location
         const ref = storage.ref(`uploads/${auth.currentUser.uid}/${Date.now()}.${extension}`);
