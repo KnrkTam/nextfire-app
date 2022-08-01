@@ -26,7 +26,7 @@ function PostManager() {
   const router = useRouter();
   const { slug }  = router.query;
 
-  const postRef = firestore.collection('users').doc(auth.currentUser.uid).collection('posts').doc(slug);
+  const postRef = firestore.collection('users').doc(auth.currentUser.uid).collection('posts').doc(slug as any);
   const [post] = useDocumentData(postRef as any);
 
   return (
@@ -88,7 +88,7 @@ function PostForm({ defaultValues, postRef, preview }) {
           required: {value: true, message: 'content is required'}
         })}></textarea>
 
-        {errors.content && <p className="text-danger">{errors.content.message}</p>}
+        {errors.content && <p className="text-danger">{errors.content.message as any}</p>}
         
         <fieldset>
           <input className={styles.checkbox} type="checkbox" {...register('published')} />
