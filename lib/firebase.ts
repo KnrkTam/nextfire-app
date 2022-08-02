@@ -8,7 +8,7 @@ import { exit } from 'process';
 
 const firebaseConfig = {
     apiKey: "AIzaSyCCVbcgwi5EFcMxWaZGp-ILMi1_kjGJUtA",
-    authDomain: "nextfire-fe8ac.firebaseapp.com",
+    authDomain: "nextfire-igmpi6yny-knrktam.vercel.app",
     projectId: "nextfire-fe8ac",
     storageBucket: "nextfire-fe8ac.appspot.com",
     messagingSenderId: "101573822699",
