@@ -106,7 +106,7 @@ function UsernameForm() {
       <section>
         <h3>Choose Username</h3>
         <form onSubmit={onSubmit}>
-          <input name="username" placholder="username" value={formValue} onChange={onChange}/>
+          <input name="username" placeholder="username" value={formValue} onChange={onChange}/>
           <button type="submit" className="btn-green" disabled={!isValid}>
             Choose
           </button>
