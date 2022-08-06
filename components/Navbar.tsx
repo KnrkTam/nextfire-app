@@ -17,7 +17,7 @@ export default function Navbar() {
       <ul>
         <li>
           <Link href="/">
-            <button className="btn-logo">Blog-demo</button>
+            <button className="btn-logo">Blog-demo2</button>
           </Link>
         </li>
         {!username && (
