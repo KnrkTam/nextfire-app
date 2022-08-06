@@ -6,16 +6,18 @@ import 'firebase/compat/storage';
 import { exit } from 'process';
 
 
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyCCVbcgwi5EFcMxWaZGp-ILMi1_kjGJUtA",
   authDomain: "nextfire-fe8ac.firebaseapp.com",
   projectId: "nextfire-fe8ac",
   storageBucket: "nextfire-fe8ac.appspot.com",
   messagingSenderId: "101573822699",
-  appId: "1:101573822699:web:97036a4007149b45be16ae",
-  measurementId: "G-65QVQW3R2Q"
+  appId: "1:101573822699:web:d2880cd7bdd05c28be16ae",
+  measurementId: "G-0NG7SCSH7J"
 };
-  
+
+
 if (!firebase.apps.length) {
     firebase.initializeApp(firebaseConfig)
 }
