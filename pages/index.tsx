@@ -1,8 +1,8 @@
 import Loader from '../components/Loader'
 import PostFeed from '../components/PostFeed';
 import { firestore, fromMillis, postToJSON } from '../lib/firebase';
-
 import { useState } from 'react';
+import Metatags from '../components/Metatags';
 
 // Max post to query per page
 const LIMIT = 3;
@@ -52,6 +52,8 @@ export default function Home(props) {
 
   return (
      <main>
+        <Metatags title={posts.title} description={posts.title} />
+
         <div className="card card-info">
             <p>Welcome! This app is built with Next.js and Firebase and is loosely inspired by Fireship.io's online tutorials.</p>
             <p>In this app, you are welcome to explore the below features:</p>

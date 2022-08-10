@@ -1,12 +1,13 @@
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+
+import Metatags from '../components/Metatags';
 
 export default function Home(props) {
 
 
     return (
         <>
+          <Metatags title="About Me" description="Contact me for more information"/>
+
           <main className="card-container font-medium">
             <div className="card sm:w-4/12" > 
               <img className="rounded-full mx-auto" src="profile_pic.jpg" alt="my profile photo"/>
