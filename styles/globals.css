@@ -1,4 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+
 
 :root {
   --color-bg: #eef0f1;
@@ -266,5 +271,39 @@ input[type="file"] {
 
 .hidden { display:  none; }
 
+.card-item {
+  padding: 2rem;
+  margin: 1rem 1rem;
+  background-color: white;
+  border: 1px solid var(--color-gray);
+  border-radius: 8px;
+}
 
 
+@media screen and (min-width: 600px) {
+  .card-container {
+
+    display: flex;
+  }
+  /* .card {
+    width: 35%
+  }
+  .card-img-center {
+    display:block;
+    margin:auto;
+    border-radius: 50%;
+    max-width: 20vh;
+  }
+  
+  .card-info {
+    color: white;
+    background: var(--color-blue);
+    width: 65%;
+  }
+*/
+  .contact-btn {
+     padding: 0.5rem 1rem;
+      font-size: 0.8rem;
+  }
+
+}

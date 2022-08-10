@@ -10,7 +10,6 @@ export default function Navbar() {
 
   const { user, username } = useContext(UserContext)
   const router  = useRouter();
-  console.log(router.pathname);
 
   return (
     <nav className="navbar">
