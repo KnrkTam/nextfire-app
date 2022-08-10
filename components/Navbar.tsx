@@ -2,28 +2,28 @@ import Link from 'next/link'
 import { useContext } from 'react';
 import { UserContext } from '../lib/context';
 import { auth } from '../lib/firebase';
+import { useRouter } from 'next/router'
 
 
 // Top navbar
 export default function Navbar() {
 
   const { user, username } = useContext(UserContext)
-
-  // const user = null;
-  // const username = null;
+  const router  = useRouter();
+  console.log(router.pathname);
 
   return (
     <nav className="navbar">
       <ul>
         <li>
           <Link href="/">
-            <button className="btn-logo">Blog-demo2</button>
+            <button className="btn-logo">Kenrick Tam</button>
           </Link>
         </li>
         {!username && (
           <li className="push-left">
             <div>
-              <BlogButton />
+              <AboutMeButton />
             </div>
           </li>
         )}
@@ -34,12 +34,10 @@ export default function Navbar() {
           <>
             <li className="push-left">
               <div style={{display: 'flex'}}>
-              <BlogButton />
+              {router.pathname !== '/aboutme' &&<AboutMeButton />}
               <WritePostButton />
               <SignOutButton />
-
               </div>
-           
             </li>
             <li>
               <Link href={`/${username}`}>
@@ -68,9 +66,9 @@ function SignOutButton() {
 }
 
 // Sign out button
-function BlogButton() {
-  return   <Link href="/blog">
-            <button className="btn-purple">Blogs</button>
+function AboutMeButton() {
+  return   <Link href="/aboutme">
+            <button className="btn-purple">About Me</button>
           </Link>;
 }
 

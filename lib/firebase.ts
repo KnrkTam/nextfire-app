@@ -13,8 +13,8 @@ const firebaseConfig = {
   projectId: "nextfire-fe8ac",
   storageBucket: "nextfire-fe8ac.appspot.com",
   messagingSenderId: "101573822699",
-  appId: "1:101573822699:web:d2880cd7bdd05c28be16ae",
-  measurementId: "G-0NG7SCSH7J"
+  appId: "1:101573822699:web:97036a4007149b45be16ae",
+  measurementId: "G-65QVQW3R2Q"
 };
 
 
