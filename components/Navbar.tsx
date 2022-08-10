@@ -23,7 +23,7 @@ export default function Navbar() {
         {!username && (
           <li className="push-left">
             <div>
-              <AboutMeButton />
+              {router.pathname !== '/aboutme' &&<AboutMeButton />}
             </div>
           </li>
         )}
