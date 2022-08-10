@@ -40,7 +40,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link href={`/${username}`}>
-                <img src={user?.photoURL} referrerPolicy="no-referrer" />
+                <img className="rounded-full" src={user?.photoURL} referrerPolicy="no-referrer" />
               </Link>
             </li>
           </>

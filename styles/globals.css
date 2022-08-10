@@ -90,9 +90,11 @@ code {
 }
 
 .navbar img {
-  border-radius: 50%;
+  /* border-radius: 50%;
   width: 50px;
-  height: 50px;
+  height: 50px; */
+  max-width: 50px;
+
   cursor: pointer;
 }
 
@@ -120,7 +122,7 @@ code {
   margin: 0.5rem 1rem 0.5rem 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 863px) {
   button {
     padding: 0.5rem 1rem;
     font-size: 0.8rem;

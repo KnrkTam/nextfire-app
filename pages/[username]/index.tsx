@@ -35,7 +35,6 @@ export default function UserProfilePage({ user, posts }) {
 
     return (
       <main>
-        <Metatags title={posts.title} description={posts.title} />
         <UserProfile user={user}/>
         <PostFeed posts={posts} />
       </main>

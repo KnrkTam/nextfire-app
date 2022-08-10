@@ -12,18 +12,18 @@ function PostItem({ post, admin = false }) {
 
   return (
     <div className="card">
-      <Link href={`/${post.username}`}>
-        <a>
-          <strong>By @{post.username}</strong>
-        </a>
-      </Link>
+    
 
       <Link href={`/${post.username}/${post.slug}`}>
         <h2>
-          <a>{post.title}</a>
+          <a className='font-bold text-ellipsis overflow-hidden ...'>{post.title}</a>
         </h2>
       </Link>
-
+      By <Link href={`/${post.username}`}>
+        <a className='text-info hover:text-blue-500'>
+          <strong>@{post.username}</strong>
+        </a>
+      </Link>
       <footer>
         <span>
           {wordCount} words. {minutesToRead} min read

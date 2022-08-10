@@ -55,19 +55,20 @@ export default function Home(props) {
         <Metatags title={posts.title} description={posts.title} />
 
         <div className="card card-info">
-            <p>Welcome! This app is built with Next.js and Firebase and is loosely inspired by Fireship.io's online tutorials.</p>
-            <p>In this app, you are welcome to explore the below features:</p>
-              <ul>
+            <p className="text-l font-bold">Welcome! This app is built with Next.js and Firebase and is loosely inspired by various online tutorials.</p>
+            <br/><p>In this app, you are welcome to explore the below features:</p>
+              <ul className='list-disc ml-4'>
                 <li>
-                  Sign up for an 👨‍🎤 account
+                   Sign up for an 👨‍🎤 account
                 </li>
                 <li>
-                  ✍️ write posts
+                   ✍️ write posts
                 </li>
                 <li>
-                  💞 heart content created by other users
+                   💞 heart content created by other users
                 </li>
               </ul>
+              <br/>
                 <p>All public content is server-rendered and search-engine optimized.</p>
           </div>
         <PostFeed posts={posts} admin={false} />
