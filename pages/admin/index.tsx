@@ -8,15 +8,14 @@ import { useRouter } from 'next/router';
 import { UserContext } from '../../lib/context';
 import kebabCase from 'lodash.kebabcase';
 import toast from 'react-hot-toast';
-import { QueryDocumentSnapshot } from 'firebase/firestore';
 
 export default function AdminPostsPage(props) {
   return (
     <main>
       <AuthCheck>
-        <PostList />
         <CreateNewPost />
-        This is Admin Page
+        <hr  className="m-5"/>
+        <PostList />
       </AuthCheck>
     </main>
   );
@@ -75,14 +74,14 @@ function CreateNewPost() {
     router.push(`/admin/${slug}`);
     }
   return (
-    <form onSubmit={createPost}>
+    <form className="rounded" onSubmit={createPost}>
       <input
         value={title}
         onChange={(e) => setTitle(e.target.value)}
-        placeholder="My Awesome Article!"
-        className={styles.input}
+        placeholder="Input your new article topic here"
+        className="rounded shadow"
       />
-      <p>
+      <p className="mt-2">
         <strong> Slug:</strong> {slug}
       </p>
       <button type="submit" disabled={!isValid} className="btn-green">

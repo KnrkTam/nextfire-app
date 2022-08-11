@@ -11,7 +11,7 @@ function PostItem({ post, admin = false }) {
   const minutesToRead = (wordCount / 100 + 1).toFixed(0);
 
   return (
-    <div className="card">
+    <div className="card shadow appearance-none">
     
 
       <Link href={`/${post.username}/${post.slug}`}>

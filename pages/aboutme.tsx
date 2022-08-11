@@ -9,7 +9,7 @@ export default function Home(props) {
           <Metatags title="About Me" description="Contact me for more information"/>
 
           <main className="card-container font-medium">
-            <div className="card md:w-5/12" > 
+            <div className="card md:w-5/12 shadow-xl" > 
               <img className="rounded-full mx-auto" src="profile_pic.jpg" alt="my profile photo"/>
               <h2 className='font-extrabold mt-2 text-sky-500'>Kenrick Tam</h2>
                 <h3>Web developer</h3>
@@ -26,7 +26,7 @@ item-center justify-center'>
                   <a href="https://www.linkedin.com/in/kenrick-tam-39625915b/"><button className="contact-btn btn-purple">Linkedin</button></a>
                 </div>
             </div>
-            <div className='card card-info'>
+            <div className='card card-info shadow-xl'>
               <h1 className="text-3xl font-extrabold">About Me </h1>
               <p>I am a web developer specialised in JavaScript and ReactJS.</p>
             
