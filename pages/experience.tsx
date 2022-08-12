@@ -17,7 +17,7 @@ export default function Expereince() {
           <div className='card shadow-xl lg:w-3/4'>
           <div className="flex flex-col mb-2 justify-between lg:flex-row">
               <span className="text-3xl font-extrabold border-b-4 border-black">Experience </span>
-              <div className='flex sm:space-x-1 md:space-x-5 sm:text-sm md:text-lg'>
+              <div className='flex space-x-5 text-lg'>
                 <Link href={`/aboutme`}>
                   <span className='cursor-pointer pr-1 font-bold hover:text-orange-400' >
                       About Me
