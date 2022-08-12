@@ -4,12 +4,12 @@ import Link from 'next/link';
 import ContactCard from '../components/ContactCard';
 import ProjectCard from '../components/ProjectCard';
 
-export default function Home() {
+export default function Projects(props) {
     const projects = [
         {
-            name: "Project A",
-            content: "Content A",
-            image: "test-image.jpeg",
+            name: "Game of Life",
+            content: "A classic game built with basic html, Javascript and css",
+            image: "gameoflife.png",
         }, 
         {
             name: "2048",
@@ -32,7 +32,7 @@ export default function Home() {
             <ContactCard />
 
             {/* Board */}
-            <div className='card shadow-xl lg:w-3/4'>
+            <div className='card shadow-xl lg:w-3/4 sm:mr-0 sm:ml-0'>
             <div className="flex flex-col mb-2 justify-between lg:flex-row">
                 <span className="text-3xl font-extrabold border-b-4 border-black">Projects </span>
                 <div className='flex space-x-5 text-lg'>
@@ -53,7 +53,7 @@ export default function Home() {
               <p>Here are some of the projects I have touched on.</p>
               <div className='flex text-black mt-5 grid gap-2 lg:gap-4 lg:h-96 overflow-auto' >
                 {/* Card */}
-                { projects.map((object) => <ProjectCard name={object.name} content={object.content} img={object.image} />) }
+                { projects.map((object, key) => <ProjectCard key={key} name={object.name} content={object.content} img={object.image} />) }
               </div>
             
        

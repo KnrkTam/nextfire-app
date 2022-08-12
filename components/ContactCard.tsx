@@ -6,7 +6,8 @@ export default function ContactCard({}) {
         <div className="card card-info lg:w-1/4 shadow-xl flex items-center flex-col lg:items-start" > 
             <img className="rounded-full mx-auto profile-img" src="profile_pic.jpg" alt="my profile photo"/>
             <h2 className='font-extrabold mt-2 text-white'>Kenrick Tam</h2>
-            <h3>Web developer</h3>
+            <h3 className="mb-2">Web developer</h3>
+
             <div className='flex flex-col items-center justify-center lg:items-start sm:text-xs md:text-sm'>
                 <p>📍 Toronto, Canada</p>
                 <p>📧 kenricktam@gmail.com</p>

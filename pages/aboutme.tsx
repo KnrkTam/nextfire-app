@@ -3,7 +3,7 @@ import Link from 'next/link';
 import ContactCard from '../components/ContactCard';
 import Metatags from '../components/Metatags';
 
-export default function Home(props) {
+export default function AboutMe(props) {
 
 
     return (
