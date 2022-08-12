@@ -10,6 +10,7 @@ export default function Navbar() {
 
   const { user, username } = useContext(UserContext)
   const router  = useRouter();
+  const profileParams = ['/aboutme', '/experience','/projects'];
 
   return (
     <nav className="navbar">
@@ -22,7 +23,7 @@ export default function Navbar() {
         {!username && (
           <li className="push-left">
             <div>
-              {router.pathname !== '/aboutme' &&<AboutMeButton />}
+              {!profileParams.includes(router.pathname) && <AboutMeButton />}
             </div>
           </li>
         )}
@@ -33,7 +34,7 @@ export default function Navbar() {
           <>
             <li className="push-left">
               <div style={{display: 'flex'}}>
-              {router.pathname !== '/aboutme' &&<AboutMeButton />}
+              {!profileParams.includes(router.pathname) && <AboutMeButton />}
               <WritePostButton />
               <SignOutButton />
               </div>
@@ -67,7 +68,7 @@ function SignOutButton() {
 // Sign out button
 function AboutMeButton() {
   return   <Link href="/aboutme">
-            <button className="btn-purple">About Me</button>
+            <button className="btn-purple transition ease-in-out hover:-translate-y-1  hover:bg-indigo-500 duration-300 ">About Me</button>
           </Link>;
 }
 

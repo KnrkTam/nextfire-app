@@ -26,7 +26,6 @@ function PostList() {
   const ref = firestore.collection('users').doc(auth.currentUser.uid).collection('posts');
   const query = ref.orderBy('createdAt');
   const [querySnapshot] = useCollection(query as any);
-
   const posts = querySnapshot?.docs.map((doc) => doc.data());
 
   return (

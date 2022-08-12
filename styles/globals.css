@@ -280,12 +280,21 @@ input[type="file"] {
   border-radius: 8px;
 }
 
+.profile-img{
+  width: 120px;
+  height: 120px;
+}
+
+.project-img{
+  width: 200px;
+  /* height: 120px; */
+}
+
 
 @media screen and (min-width: 600px) {
-  .card-container {
-
+  /* .card-container {
     display: flex;
-  }
+  } */
   /* .card {
     width: 35%
   }
