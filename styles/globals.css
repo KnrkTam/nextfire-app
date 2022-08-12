@@ -294,6 +294,13 @@ input[type="file"] {
   margin: 0 !important;
 }
 
+@media only screen and (min-width: 600px) {
+
+  .contact-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}
 @media only screen and (max-width: 600px) {
   main{
     padding:0;
@@ -317,9 +324,6 @@ input[type="file"] {
     width: 65%;
   }
 */
-  .contact-btn {
-     padding: 0.5rem 1rem;
-      font-size: 0.8rem;
-  }
+
 
 }
