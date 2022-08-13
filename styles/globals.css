@@ -287,7 +287,7 @@ input[type="file"] {
 }
 
 .project-img{
-  width: 200px;
+  width: 200vw;
   /* height: 120px; */
 }
 
@@ -297,7 +297,7 @@ input[type="file"] {
 
 @media only screen and (min-width: 600px) {
 
-  .contact-btn {
+  .btn {
     padding: 0.5rem 1rem;
     font-size: 0.8rem;
   }

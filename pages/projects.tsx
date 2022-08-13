@@ -4,7 +4,7 @@ import Link from 'next/link';
 import ContactCard from '../components/ContactCard';
 import ProjectCard from '../components/ProjectCard';
 
-export default function Projects(props) {
+export default function Projects() {
     const projects = [
         {
             name: "Game of Life",
@@ -17,12 +17,6 @@ export default function Projects(props) {
             content: "A classic game game written by Italian web developer Gabriele Cirulli and published. By slideing and merging tiles with identical numbers to achieve 2048 tile as soon as possible. Players can slides the tile with arrow keys on keyboard.",
             image: "2048.png",
             link: 'https://knrktam.github.io/2048/'
-        }, 
-        {
-            name: "Project C",
-            content: "Content C",
-            image: "test-image.jpeg",
-            link:""
         }, 
 ];
 
