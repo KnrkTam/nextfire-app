@@ -9,7 +9,6 @@ export default function AboutMe(props) {
     return (
         <>
           <Metatags title="About Me" description="Contact me for more information"/>
-
           <main className="card-container lg:flex font-medium">
             <ContactCard />
             {/* Board */}
