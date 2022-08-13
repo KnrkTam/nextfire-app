@@ -19,6 +19,7 @@ const MetaTags:FC<MetaTagesProps> = (props) => {
         <meta property="og:title" content={props.title} />
         <meta property="og:description" content={props.description} />
         <meta property="og:image" content={props.image} />
+
     </Head>
   )
 }
