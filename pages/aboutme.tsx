@@ -14,7 +14,7 @@ export default function AboutMe(props) {
             {/* Board */}
             <div className='card shadow-xl lg:w-3/4  '>
               <div className="flex flex-col mb-2 justify-between lg:flex-row">
-                <span className="text-xl lg:text-3xl font-extrabold border-b-4 border-black ">About Me </span>
+              <span className="text-3xl font-extrabold border-b-4 border-black">About Me </span>
                 <div className='flex space-x-5 text-lg'>
                   <Link href={`/projects`}>
                     <span className='cursor-pointer pr-1 font-bold hover:text-orange-400 sm:text-sm md:text-lg' >

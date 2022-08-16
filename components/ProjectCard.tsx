@@ -1,5 +1,5 @@
 
-export default function ProjectCard({name, content, img, link}) {
+export default function ProjectCard({name, content, img, link, tech}) {
 
     return (
         <>
@@ -12,9 +12,13 @@ export default function ProjectCard({name, content, img, link}) {
                 <h2 className='font-extrabold'>{name}</h2>
                 <span>{content}</span>
                 <div className='font-bold grid grid-cols-3'>
-                    <span className='text-center col-span-1 rounded-lg bg-gray-400 p-2 m-2'>Html</span>
-                    <span className='text-center col-span-1 rounded-lg bg-gray-400 p-2 m-2'>CSS</span>
-                    <span className='text-center col-span-1 rounded-lg bg-gray-400 p-2 m-2'>JavaScript</span>
+                  {/* { tech.map((object, key) => <span className="text-center col-span-1 rounded-lg bg-gray-400 p-2 m-2">${element}</span>' } */}
+
+                  {tech.map((element , key)=> {
+                      return (
+                      <span className="text-center col-span-1 rounded-lg bg-gray-400 p-2 m-2" key={key}>{element}</span>
+                      )
+                  })}
                     <a className="text-center col-span-1 rounded-lg bg-green-500 p-2 m-2  text-white hover:bg-green-700 transition ease-in-out hover:-translate-y-1 duration-300 cursor-pointer" href={link} >Project</a>
                 </div>
             </div>
