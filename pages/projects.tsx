@@ -7,6 +7,14 @@ import ProjectCard from '../components/ProjectCard';
 export default function Projects() {
     const projects = [
         {
+            name: "This project",
+            content: "A demo blog project developed with Next.js framework and Google Firebase database",
+            image: "next-fire.png",
+            link: 'https://kenricktam.vercel.app',
+            tech: ['ReactJS', 'Next.js', 'Google Firestore', 'Vercel', 'Tailwind CSS'],
+
+        }, 
+        {
             name: "Game of Life",
             content: "A classic game built with basic html, Javascript and css",
             image: "gameoflife.png",
