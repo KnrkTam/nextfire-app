@@ -211,6 +211,8 @@ button.btn-logo:hover {
 .card-info {
   color: white;
   background: var(--color-blue);
+  background: linear-gradient(to bottom ,var(--color-purple),var(--color-blue));
+
 }
 
 /* Loader */
