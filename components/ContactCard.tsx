@@ -35,7 +35,7 @@ export default function ContactCard({}) {
                     <EmailIcon className="w-8 h-8 transition transform cursor-pointer text-blueGray-400 hover:text-orange-600 hover:scale-125 duration-600" />
 
                 </a>
-                <Link href="https://wa.me/14379738229?text=Hello World!">
+                <Link href="https://wa.me/14379738229?text=Hello there!">
                   <a target="_blank">
                     <WhatsAppIcon className="w-8 h-8 transition-all transform cursor-pointer text-blueGray-400 hover:text-green-600 hover:scale-125 duration-600" />
                   </a>
