@@ -5,7 +5,21 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        slide: {
+          '0%':{
+            opacity: 0
+          },
+          '100%': {
+              opacity: 1,
+          },
+        }
+    },
+    animation: {
+        slide: 'slide 3s',
+    }
+    },
   },
   plugins: [
 

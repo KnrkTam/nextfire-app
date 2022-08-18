@@ -17,7 +17,7 @@ export default function Navbar() {
       <ul>
         <li>
           <Link href="/">
-            <button className="btn-logo">Kenrick Tam</button>
+            <button className="btn-logo transition ease-in-out hover:scale-110">Kenrick Tam</button>
           </Link>
         </li>
         {!username && (
@@ -41,7 +41,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link href={`/${username}`}>
-                <img className="rounded-full" src={user?.photoURL} referrerPolicy="no-referrer" />
+                <img className="rounded-full transition ease-in-out hover:scale-110" src={user?.photoURL} referrerPolicy="no-referrer" />
               </Link>
             </li>
           </>
@@ -62,19 +62,19 @@ export default function Navbar() {
 
 // Sign out button
 function SignOutButton() {
-  return <button onClick={() => auth.signOut()}>Sign Out</button>;
+  return <button className="transition ease-in-out hover:scale-110" onClick={() => auth.signOut()}>Sign Out</button>;
 }
 
 // Sign out button
 function AboutMeButton() {
   return   <Link href="/aboutme">
-            <button className="btn-purple transition ease-in-out hover:-translate-y-1  hover:bg-indigo-500 duration-300 ">About Me</button>
+            <button className="btn-purple transition ease-in-out hover:scale-110  hover:bg-indigo-500 duration-300 ">About Me</button>
           </Link>;
 }
 
 function WritePostButton() {
   return  <Link href="/admin">
-  <button className="btn-blue">Write Posts</button>
+  <button className="btn-blue transition ease-in-out hover:scale-110">Write Posts</button>
 </Link>
 }
 
