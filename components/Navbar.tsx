@@ -17,7 +17,7 @@ export default function Navbar() {
       <ul>
         <li>
           <Link href="/">
-            <button className="btn-logo transition ease-in-out hover:scale-110">Kenrick Tam</button>
+            <button className="btn-logo transition ease-in-out hover:bg-gradient-to-r from-[#00ff8d] to-[#00dcff] hover:scale-110">Kenrick Tam</button>
           </Link>
         </li>
         {!username && (
@@ -51,7 +51,7 @@ export default function Navbar() {
         {!username && (
           <li>
             <Link href="/enter">
-              <button className="btn-blue">Log in</button>
+              <button className="btn-blue transition hover:scale-110">Log in</button>
             </Link>
           </li>
         )}

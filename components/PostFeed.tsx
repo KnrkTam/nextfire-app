@@ -14,7 +14,7 @@ function PostItem({ post, admin = false }) {
     <div className="card shadow appearance-none">
     
 
-      <Link href={`/${post.username}/${post.slug}`}>
+      <Link  href={`/${post.username}/${post.slug}`}>
         <h2>
           <a className='font-bold text-ellipsis overflow-hidden ...'>{post.title}</a>
         </h2>

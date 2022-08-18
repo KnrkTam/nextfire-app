@@ -3,7 +3,7 @@ export default function ProjectCard({name, content, img, link, tech}) {
 
     return (
         <>
-          <div className="flex flex-col sm:flex-row items-center gap-4 bg-gray-200 rounded-lg mt-1 mr-1 animate-slide">
+          <div className="flex flex-col sm:flex-row items-center gap-4 bg-gray-200 rounded-lg mt-1 mr-1 transition-all animate-in slide-in-from-bottom duration-1000" data-replace='{ "translate-y-12": "translate-y-0" }'>
             <div className="flex-initial w-1/3 p-2">
                 <img className='m-2 project-img' src={img} alt="test"/>
             </div>

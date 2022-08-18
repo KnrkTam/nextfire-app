@@ -16,11 +16,14 @@ export default function Enter(props) {
   
   return (
     <main>
+      <div className="flex justify-center w-full" >
       {user ? 
         !username ? <UsernameForm /> : <SignOutButton /> 
         : 
         <SignInButton />
       }
+      </div>
+  
     </main>
   );
 }
