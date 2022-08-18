@@ -35,7 +35,7 @@ export default function SubheadingBar({title}) {
             <span className="text-3xl font-extrabold border-b-4 border-black">{title}</span>
             <div className='flex space-x-5 text-lg'>
                 {other.map((object, key) => <Link href={object.href} key={key}>
-                <span  className='cursor-pointer pr-1 transform transition font-bold hover:-translate-y-1 hover:text-orange-400 sm:text-sm md:text-lg duration-600' >
+                <span  className='cursor-pointer pr-1 transform transition font-bold lg:hover:-translate-y-1 hover:translate-x-1  hover:text-orange-400 sm:text-sm md:text-lg duration-600' >
                     {object.name}
                 </span>
                 </Link>)}

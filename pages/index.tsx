@@ -59,13 +59,13 @@ export default function Home(props) {
             <br/><p>In this app, you are welcome to explore the below features:</p>
               <ul className='list-disc ml-4 text-white font-bold'>
                 <li>
-                   Sign up for an 👨‍🎤 account
+                   Sign up or login for an 👨‍🎤 account with Google Authentication
                 </li>
                 <li>
-                   ✍️ write posts
+                   ✍️ Write and edit posts 
                 </li>
                 <li>
-                   💞 heart content created by other users
+                   💞 Heart content created by other users
                 </li>
               </ul>
               <br/>
