@@ -19,7 +19,7 @@ export default function ContactCard({}) {
                 <p>📧 kenricktam@gmail.com</p>
                 <p>📱 (437) 973 - 8229</p>
             </div>
-            <span className="flex gap-2 mb-2 rounded-3xl bg-blue-800 p-3 w-3/4 lg:w-full place-content-around">
+            <span className="flex gap-2 mb-2 rounded-3xl bg-blue-800 p-3 w-3/4 lg:w-fullconsole.log(console.log()) place-content-around">
                 <Link href="https://github.com/knrktam">
                     <a target="_blank">
                         <GitHubIcon className="w-8 h-8 transition-all transform cursor-pointer text-blueGray-100 hover:text-gray-300 hover:bg-white-600 hover:scale-150 duration-600 ease-in-out" />
