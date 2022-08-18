@@ -19,7 +19,7 @@ export default function ContactCard({}) {
                 <p>📧 kenricktam@gmail.com</p>
                 <p>📱 (437) 973 - 8229</p>
             </div>
-            <span className="flex gap-2 mb-2 rounded-3xl bg-blue-800 p-3 w-2/5 place-content-around lg:w-full">
+            <span className="flex gap-2 mb-2 rounded-3xl bg-blue-800 p-3 w-2/5 place-content-around lg:w-full xs: w-full">
                 <Link href="https://github.com/knrktam">
                     <a target="_blank">
                         <GitHubIcon className="w-8 h-8 transition-all transform cursor-pointer text-blueGray-400 hover:text-gray-900 hover:bg-white-600 hover:scale-125 duration-600" />
@@ -35,7 +35,7 @@ export default function ContactCard({}) {
                     <EmailIcon className="w-8 h-8 transition transform cursor-pointer text-blueGray-400 hover:text-orange-600 hover:scale-125 duration-600" />
 
                 </a>
-                <Link href="https://wa.me/14379748229?text=Hello World!">
+                <Link href="https://wa.me/14379738229?text=Hello World!">
                   <a target="_blank">
                     <WhatsAppIcon className="w-8 h-8 transition-all transform cursor-pointer text-blueGray-400 hover:text-green-600 hover:scale-125 duration-600" />
                   </a>
