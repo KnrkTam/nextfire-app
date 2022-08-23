@@ -11,9 +11,7 @@ function PostItem({ post, admin = false }) {
   const minutesToRead = (wordCount / 100 + 1).toFixed(0);
 
   return (
-    <div className="card shadow appearance-none">
-    
-
+    <div className="card shadow appearance-none animate-in slide-in-from-bottom duration-700">
       <Link  href={`/${post.username}/${post.slug}`}>
         <h2>
           <a className='font-bold text-ellipsis overflow-hidden ...'>{post.title}</a>

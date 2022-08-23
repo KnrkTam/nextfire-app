@@ -32,16 +32,16 @@ export default function SubheadingBar({title}) {
     return (
         <>
           <div className="flex flex-col mb-2 justify-between lg:flex-row">
-            <span className="text-3xl font-extrabold border-b-4 border-black">{title}</span>
+            <span className="text-3xl font-extrabold border-b-4 border-black animate-in fade-in duration-1000">{title}</span>
             <div className='flex space-x-5 text-lg'>
                 {other.map((object, key) => <Link scroll={false}  href={object.href} key={key}>
-                <span  className='cursor-pointer pr-1 transform transition font-bold lg:hover:-translate-y-1 hover:translate-x-1  hover:text-orange-400 sm:text-sm md:text-lg duration-600' >
+                <span  className='cursor-pointer pr-1 transform transition font-bold hover:translate-x-1  hover:text-orange-400 sm:text-sm md:text-lg animate-in slide-in-from-right duration-700' >
                     {object.name}
                 </span>
                 </Link>)}
             </div>
           </div>
-          <p>{main.description}</p>
+          <p className="animate-in slide-in-from-right-4 duration-1000">{main.description}</p>
         </> 
     )    
   }

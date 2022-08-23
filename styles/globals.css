@@ -1,9 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap");
 
 :root {
   --color-bg: #eef0f1;
@@ -11,27 +9,32 @@
   --color-blue: #3b49df;
   --color-red: #df3b3b;
   --color-green: #3bdf72;
-  --color-gray: #b5bdc4; 
-  --color-purple:  #7E3ADE;
+  --color-gray: #b5bdc4;
+  --color-purple: #7e3ade;
 }
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   background-color: var(--color-bg);
   color: var(--color-text);
   margin-top: 50px;
 }
 
-
 main {
   padding: 1rem 10vw;
 }
 
-h1 { font-size: 2rem; }
-h2 { font-size: 1.5rem; }
-h2 { font-size: 1.25rem; }
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.25rem;
+}
 
 a {
   color: inherit;
@@ -43,10 +46,12 @@ a {
   box-sizing: border-box;
 }
 
-img {max-width: 100%;}
+img {
+  max-width: 100%;
+}
 
-input { 
-  display: inline-block; 
+input {
+  display: inline-block;
   outline: none;
   border: none;
   font-size: 1.5rem;
@@ -101,12 +106,12 @@ code {
 .navbar li {
   /* padding-top: 2%; */
   border-radius: 50%;
-  
 }
 
 /* Buttons */
 
-.btn, button {
+.btn,
+button {
   background-color: var(--color-gray);
   border: none;
   color: var(--color-text);
@@ -117,7 +122,7 @@ code {
   text-align: center;
   justify-content: center;
   text-decoration: none;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: bold;
   border-radius: 0.25rem;
   cursor: pointer;
@@ -138,14 +143,12 @@ code {
   }
 }
 
-
-
 button:hover {
   filter: brightness(90%);
 }
 
 button:disabled,
-button[disabled]{
+button[disabled] {
   filter: brightness(80%);
   cursor: not-allowed;
 }
@@ -210,9 +213,9 @@ button.btn-logo:hover {
 }
 
 .card-img-center {
-  width:20vh;
-  display:block;
-  margin:auto;
+  width: 20vh;
+  display: block;
+  margin: auto;
   border-radius: 50%;
   max-width: 20vh;
 }
@@ -220,15 +223,18 @@ button.btn-logo:hover {
 .card-info {
   color: white;
   background: var(--color-blue);
-  background: linear-gradient(to bottom ,var(--color-purple),var(--color-blue));
-
+  background: linear-gradient(
+    to bottom,
+    var(--color-purple),
+    var(--color-blue)
+  );
 }
 
 /* Loader */
 
 .loader {
-  border: 10px solid var(--color-bg); 
-  border-top: 10px solid var(--color-blue); 
+  border: 10px solid var(--color-bg);
+  border-top: 10px solid var(--color-blue);
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -236,8 +242,12 @@ button.btn-logo:hover {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* File uploads */
@@ -248,10 +258,10 @@ input[type="file"] {
 
 .upload-snippet {
   width: 75%;
-    margin-left: auto;
-    background: white;
-    padding: 5px;
-    margin: 5px 0;
+  margin-left: auto;
+  background: white;
+  padding: 5px;
+  margin: 5px 0;
 }
 /* Utilities */
 
@@ -290,7 +300,9 @@ input[type="file"] {
   text-align: center;
 }
 
-.hidden { display:  none; }
+.hidden {
+  display: none;
+}
 
 .card-item {
   padding: 2rem;
@@ -303,17 +315,17 @@ input[type="file"] {
 }
 
 @keyframes show {
-  0% {    
-      opacity: 0.5;
-      transform: scale(0);
+  0% {
+    opacity: 0.5;
+    transform: scale(0);
   }
 }
-.profile-img{
+.profile-img {
   width: 120px;
   height: 120px;
 }
 
-.project-img{
+.project-img {
   width: 200vw;
 }
 
@@ -322,15 +334,14 @@ input[type="file"] {
 }
 
 @media only screen and (min-width: 600px) {
-
   .btn {
     padding: 0.5rem 1rem;
     font-size: 0.8rem;
   }
 }
 @media only screen and (max-width: 600px) {
-  main{
-    padding:0;
+  main {
+    padding: 0;
   }
   /* .card-container {
     display: flex;
@@ -351,48 +362,17 @@ input[type="file"] {
     width: 65%;
   }
 */
-
-
 }
 
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-  transition: transform 250ms;
-
+.skeleton {
+  animation: 1s skeleton-loading ease-in-out infinite;
 }
 
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-
-  top: -5px;
-  left: 105%;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-
-
-
-.tooltiptext:after,
-.tooltiptext:before {
-  transform: translate3d(0,-10px,0);
-  transition: all .15s ease-in-out;
-}
-.tooltiptext:hover:after,
-.tooltiptext:hover:before {
-  opacity: 1;
-  transform: translate3d(0,0,0);
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
 }
