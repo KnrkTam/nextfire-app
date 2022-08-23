@@ -41,7 +41,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link href={`/${username}`}>
-                <img className="rounded-full transition ease-in-out hover:scale-110" src={user?.photoURL} referrerPolicy="no-referrer" />
+                <img className="rounded-full transition ease-in-out hover:scale-110 skeleton" src={user?.photoURL} referrerPolicy="no-referrer" />
               </Link>
             </li>
           </>

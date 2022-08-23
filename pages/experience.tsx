@@ -19,7 +19,7 @@ export default function Expereince() {
           <SubheadingBar title="Experience"/>            
             <div className='bg-gray-200 rounded p-5 mt-5 grid gap-2  overflow-auto animate-in fade-in duration-1000' >
                 <span>
-                    <a href="https://onesolution.com.hk/en/"className='font-extrabold'>One Solution Limited · Full-time</a>
+                    <a href="https://onesolution.com.hk/en/" className='font-extrabold hover:text-orange-500 transition ease-in-out'>One Solution Limited · Full-time</a>
                     <br></br>
                     <span className='text-sm'>Jun 2021 - Jun 2022 · 1 yr</span>
                     <ul>
@@ -32,7 +32,7 @@ export default function Expereince() {
             </div>
             <div className='bg-gray-200 rounded p-5 mt-5 grid gap-2  overflow-auto animate-in fade-in duration-1000' >
                 <span>
-                    <a href="https://onesolution.com.hk/en/"className='font-extrabold'>JDT Consulting Limited · Full-time</a>
+                    <a href="https://www.linkedin.com/company/jdt-consulting-limited/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=hk" className='font-extrabold hover:text-orange-500 transition ease-in-out'>JDT Consulting Limited · Full-time</a>
                     <br></br>
                     <span className='text-sm'>Dec 2020 - Jun 2021 · 7 months</span>
                     <ul>

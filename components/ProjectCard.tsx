@@ -13,7 +13,7 @@ export default function ProjectCard({name, content, img, link, tech}) {
                 <div className='font-bold grid grid-cols-3'>
                   {tech.map((element , key)=> {
                       return (
-                      <span className="text-center  col-span-1 rounded-lg bg-gray-400 p-2 m-2" key={key}>{element}</span>
+                      <span className="text-center col-span-1 rounded-lg bg-gray-400 p-2 m-2" key={key}>{element}</span>
                       )
                   })}
                     <a className="text-center col-span-1 rounded-lg bg-green-500 p-2 m-2  text-white hover:bg-green-700 transition ease-in-out hover:-translate-y-1 duration-300 cursor-pointer" href={link} >Project</a>

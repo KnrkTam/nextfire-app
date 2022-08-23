@@ -1,6 +1,5 @@
 
 import Metatags from '../components/Metatags';
-import Link from 'next/link';
 import ContactCard from '../components/ContactCard';
 import ProjectCard from '../components/ProjectCard';
 import SubheadingBar from '../components/SubheadingBar';
@@ -12,7 +11,7 @@ export default function Projects() {
             content: "A demo blog project developed with Next.js framework and Google Firebase database",
             image: "next-fire.png",
             link: 'https://kenricktam.vercel.app',
-            tech: ['ReactJS', 'Next.js', 'Google Firestore', 'Vercel', 'Tailwind CSS'],
+            tech: ['ReactJS', 'Next.js', 'Google Firestore', 'OAuth', 'Vercel', 'Tailwind CSS'],
 
         }, 
         {
@@ -20,7 +19,7 @@ export default function Projects() {
             content: "A classic game built with basic html, Javascript and css",
             image: "gameoflife.png",
             link: "https://knrktam.github.io/gameoflife/",
-            tech: ['html', 'JS', 'CSS'],
+            tech: ['Html', 'JS', 'CSS'],
         }, 
         {
             name: "2048",
@@ -35,7 +34,7 @@ export default function Projects() {
           content: "A calculator app that is mobile responsive.",
           image: "calculator.png",
           link: 'https://knrktam.github.io/calculator/',
-          tech: ['React', 'CSS'],
+          tech: ['React', 'JavaScript', 'CSS'],
 
       }, 
         
@@ -64,9 +63,4 @@ export default function Projects() {
   
   }
 
-
-  function contactMe()
-  {
-      window.location.href = "mailto:kenricktam@gmail.com";
-  }
   
