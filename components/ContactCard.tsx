@@ -29,7 +29,7 @@ export default function ContactCard({}) {
               <GitHubIcon className="w-8 h-8 transition-all transform cursor-pointer text-blueGray-100 hover:text-gray-300 hover:bg-white-600 hover:scale-150 duration-600 ease-in-out" />
             </a>
           </Link>
-          <Link href="https://www.linkedin.com/in/kenrick-tam-39625915b/">
+          <Link href="https://www.linkedin.com/in/kenricktam">
             <a target="_blank">
               <LinkedInIcon className="w-8 h-8 transition transform cursor-pointer text-blueGray-400 hover:text-blue-600 hover:scale-150 duration-600" />
             </a>
