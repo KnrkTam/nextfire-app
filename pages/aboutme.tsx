@@ -39,7 +39,7 @@ export default function AboutMe(props) {
                 <div className='card-item cursor-default hover:scale-110 hover:bg-purple-500 hover:text-white duration-300'>
                   <h3 className='font-bold flex'>
                     Cooking <LocalDiningIcon className='h-5 w-5 ml-1'/>
-                  </h3><p>I enjoy cooking a lot! I make Chinese and Western cuisines daily</p></div>
+                  </h3><p>I enjoy cooking a lot! I make Asian and Western cuisines daily</p></div>
                 <div className='card-item cursor-default hover:scale-110 hover:bg-purple-500 hover:text-white duration-300'>
                   <h3 className='font-bold flex'>
                     Exercise <SportsSoccerIcon className='h-5 w-5 ml-1'/>
