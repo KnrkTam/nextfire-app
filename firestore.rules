@@ -73,14 +73,13 @@ service cloud.firestore {
       // Hearts
       
       function canIncrementHearts(userId, postId) {
-		let hasValidFields = request.resource.data.diff(resource.data).affectedKeys().hasOnly(['heartCount']);
+		    let hasValidFields = request.resource.data.diff(resource.data).affectedKeys().hasOnly(['heartCount']);
         let currentUser = request.auth.uid;
 		    let heartDocExistsAfter = existsAfter(/databases/$(database)/documents/users/$(userId)/posts/$(postId)/hearts/$(currentUser));
         let heartDocExists = exists(/databases/$(database)/documents/users/$(userId)/posts/$(postId)/hearts/$(currentUser));
 				
         let heartDocAdded= !heartDocExists && heartDocExistsAfter;
         let heartDocRemoved = heartDocExists && !heartDocExistsAfter;
-
         
         let countChange = request.resource.data.heartCount - resource.data.heartCount;
         let validChange = countChange == 1 || countChange == -1;

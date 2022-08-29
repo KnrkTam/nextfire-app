@@ -44,7 +44,7 @@ export default function Projects() {
 
     return (
         <>
-          <Metatags title="About Me" description="Contact me for more information"/>
+          <Metatags title="Projects" description="Contact me for more information"/>
           <main className="card-container lg:flex font-medium">
             <ContactCard />
             {/* Board */}

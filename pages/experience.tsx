@@ -9,7 +9,7 @@ export default function Expereince() {
 
     return (
         <>
-        <Metatags title="About Me" description="Contact me for more information"/>
+        <Metatags title="Experiences" description="Contact me for more information"/>
 
         <main className="card-container lg:flex font-medium overflow:hidden">
             <ContactCard />

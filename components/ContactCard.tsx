@@ -45,7 +45,7 @@ export default function ContactCard({}) {
           </Link>
         </span>
         <div className="flex flex-col items-center lg:items-start">
-          <a href="/resume.pdf" download>
+          <a href="/pdf/resume.pdf" download>
             <button className="contact-btn bg-white text-purple-700 transition ease-in-out hover:scale-110">
               Download Resume
             </button>

@@ -3,14 +3,14 @@ import { FC } from 'react';
  
 interface MetaTagesProps {
   title:string;
-  description:string;
+  description?:string;
   image?:string;
 };
 
 const MetaTags:FC<MetaTagesProps> = (props) => {
   return (
     <Head>
-        <title>Resume | Kenrick Tam | Web developer</title>
+        <title>{props.title ? props.title : 'Resume | Kenrick Tam | Web developer'}</title>
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@kenrick_demo_dev" />
         <meta name="twitter:title" content={ props.title } />
