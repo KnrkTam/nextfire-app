@@ -44,10 +44,6 @@ export async function getStaticProps({ params }) {
       };
     });
     return {
-      // must be in this format:
-      // paths: [
-        // {params: { username, slug}}
-      // ],
       paths,
       fallback: 'blocking',
     };
