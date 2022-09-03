@@ -1,4 +1,3 @@
-import { Tooltip, Button } from "@nextui-org/react";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";

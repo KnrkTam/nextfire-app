@@ -17,7 +17,7 @@ export default function Navbar() {
       <ul>
         <li>
           <Link href="/">
-            <button className="btn-logo transition ease-in-out hover:bg-gradient-to-r from-[#00ff8d] to-[#00dcff] hover:scale-110">Kenrick Tam</button>
+            <button className="btn-logo transition ease-in-out hover:bg-gradient-to-r from-[#00ff8d] to-[#00dcff] hover:scale-110">DevJourney</button>
           </Link>
         </li>
         {!username && (
@@ -67,9 +67,14 @@ function SignOutButton() {
 
 // Sign out button
 function AboutMeButton() {
-  return   <Link href="/aboutme">
-            <button className="btn-purple transition ease-in-out hover:scale-110  hover:bg-indigo-500 duration-300 ">About Me</button>
-          </Link>;
+  return (
+    <a
+      href="https://kenricktam.vercel.app">
+      <button className="btn-purple transition ease-in-out hover:scale-110  hover:bg-indigo-500 duration-300 ">
+        About Me
+      </button>
+    </a>
+  );
 }
 
 function WritePostButton() {
