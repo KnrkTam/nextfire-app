@@ -40,7 +40,7 @@ export default function ContactCard({}) {
           </a>
           <Link href="https://wa.me/14379738229?text=Hello there!">
             <a target="_blank">
-              <WhatsAppIcon className="w-8 h-8 transition-all transform cursor-pointer text-blueGray-400 hover:text-green-600 hover:scale-150 ease-in-out" />
+              <WhatsAppIcon className="w-8 h-8 translation transition-all ease-in-out transform cursor-pointer text-blueGray-400 hover:text-green-600 hover:scale-150 " />
             </a>
           </Link>
         </span>

@@ -40,6 +40,7 @@ function PostList() {
 function CreateNewPost() {
   const router = useRouter();
   const { username } = useContext(UserContext);
+  
   const [title, setTitle] = useState('');
   const slug = encodeURI(kebabCase(title));
 
