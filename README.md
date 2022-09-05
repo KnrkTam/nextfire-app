@@ -12,10 +12,10 @@ The aim of this project are practising the usage of basic react hooks, trying ou
 ## Key Features 
 
 The key features for this project are 
-- Custom Firebase usernames
--  Bot-friendly content (SEO)
+- Custom username (data stores in firestore)
+- Bot-friendly content (SEO)
 - Advanced SSR, SSG, and ISR techniques
-- Firestore CRUD and data modeling
+- Firestore CRUD and data modeling (non-relational database)
 - Reactive forms with react-hook-form
 - Image file uploads
 - Realtime post-likes
@@ -28,6 +28,11 @@ The key features for this project are
 - [Firebase & Firestore](https://firebase.google.com)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Vercel] (https://vercel.com/)
+
+## Extensive material that helped me come up with this project
+- [Firestore & NoSQL database](https://www.youtube.com/watch?v=v_hR4K4auoQ&ab_channel=Firebase)
+- [Data Modeling](https://www.youtube.com/watch?v=35RlydUf6xo&ab_channel=Fireship)
+- [Rendering Strategy](https://dev.to/theodorusclarence/should-we-use-csr-ssr-ssg-or-isr-on-nextjs-1f29)
 
 
 
