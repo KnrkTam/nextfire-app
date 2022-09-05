@@ -1,6 +1,5 @@
-# Description 
-## DevJourney
-
+# DevJourney
+## Description 
 DevJourney is a simple application that inspired by [DEV](https://dev.to/) for developers to share their thoughts and giving feedback to each others. The project is for non-commerical usage and is open to everyone. 
 
 This is a personal project designed to be a standard forum/blog website with the usage of [ReactJS](https://reactjs.org/), [Next.JS](https://nextjs.org/) and [Firebase](https://firebase.google.com).
