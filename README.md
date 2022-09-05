@@ -2,12 +2,12 @@
 ## Description 
 DevJourney is a simple application that inspired by [DEV](https://dev.to/) for developers to share their thoughts and giving feedback to each others. The project is for non-commerical usage and is open to everyone. 
 
-This is a personal project designed to be a standard forum/blog website with the usage of [ReactJS](https://reactjs.org/), [Next.JS](https://nextjs.org/) and [Firebase](https://firebase.google.com).
+The aim of building this project was initially educational and have a first taste of using NoSQL database and data modeling in a reallife project.
 
-The aim of this project are practising the usage of basic react hooks, trying out Next.Js and getting familar with Google Firebase 
 
 ## Live Demo
 - [DevJourney](https://dev-journey-knrktam.vercel.app/)
+![Thumbnail](https://raw.githubusercontent.com/KnrkTam/nextfire-app/main/public/next-fire.png)
 
 ## Key Features 
 
