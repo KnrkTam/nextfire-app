@@ -18,8 +18,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <NextUIProvider theme={darkTheme}>
       <UserContext.Provider value={userData}>
-        <Navbar />
-        <Component {...pageProps} />
+          <Navbar />
+          <Component {...pageProps} />
         <Toaster />
       </UserContext.Provider>
     </NextUIProvider>

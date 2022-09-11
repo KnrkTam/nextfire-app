@@ -3,6 +3,7 @@ import PostFeed from '../components/PostFeed';
 import { firestore, fromMillis, postToJSON } from '../lib/firebase';
 import { useState } from 'react';
 import Metatags from '../components/Metatags';
+import Announcement from '../components/Announcement';
 
 // Max post to query per page
 const LIMIT = 3;
@@ -50,36 +51,26 @@ export default function Home(props) {
     }
   };
 
+  // function MouseOver(event) {
+  //   event.target.style.background = "red";
+  // }
+  // function MouseOut(event) {
+  //   event.target.style.background = "";
+  // }
+
   return (
-     <main>
-        <Metatags title={posts.title} description={posts.title} />
-
-        <div className="card card-info shadow">
-            <p className="text-l font-bold">Welcome! This app is built with Next.js and Firebase and is loosely inspired by various online tutorials.</p>
-            <br/><p>In this app, you are welcome to explore the below features:</p>
-              <ul className='list-disc ml-4 text-white font-bold'>
-                <li>
-                   Sign up or login for an 👨‍🎤 account with Google Authentication
-                </li>
-                <li>
-                   ✍️ Write and edit posts 
-                </li>
-                <li>
-                   💞 Heart content created by other users
-                </li>
-              </ul>
-              <br/>
-                <p>All public content is server-rendered and search-engine optimized.</p>
-          </div>
-        <PostFeed posts={posts} admin={false} />
-
-        {!loading && !postsEnd && <button onClick={getMorePosts}>Load more</button>}
-
+    <main>
+      <Metatags title={posts.title} description={posts.title} />
+      <Announcement  />
+      <PostFeed posts={posts} admin={false} />
+      <div className="flex justify-center m-10">
+        {!loading && !postsEnd && (
+          <button onClick={getMorePosts}>Load more</button>
+        )}
         <Loader show={loading} />
-
-        {postsEnd && 'You have reached the end!'}
-      </main>
-
+        {postsEnd && "You have reached the end!"}
+      </div>
+    </main>
   );
 
 }
