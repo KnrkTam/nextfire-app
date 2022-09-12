@@ -59,7 +59,7 @@ export default function Home(props) {
   // }
 
   return (
-    <main>
+    <div className=''>
       <Metatags title={posts.title} description={posts.title} />
       <Announcement  />
       <PostFeed posts={posts} admin={false} />
@@ -70,7 +70,7 @@ export default function Home(props) {
         <Loader show={loading} />
         {postsEnd && "You have reached the end!"}
       </div>
-    </main>
+    </div>
   );
 
 }
