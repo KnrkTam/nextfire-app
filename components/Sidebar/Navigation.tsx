@@ -219,9 +219,9 @@ export function SidebarNavigation() {
                 {section.label}
               </h4>
             )}
-            {section.items.map((item, j) => (
-              <NavigationLink key={j} link={item} />
-            ))}
+            {/* {section.items.map((item, j) => (
+              // <NavigationLink key={j} link={item} />
+            ))} */}
           </ul>
         );
       })}
