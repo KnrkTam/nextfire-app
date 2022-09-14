@@ -1,9 +1,6 @@
 import { useRouter } from "next/router";
 import * as React from "react";
-// import { Plus } from "react-feather";
 
-// import { AddBookmarkDialog } from "~/components/Bookmarks/AddBookmarkDialog";
-// import { GhostButton } from "~/components/Button";
 import {
   AMAIcon,
   AppDissectionIcon,
@@ -21,7 +18,7 @@ import {
   TwitterIcon,
   WritingIcon,
   YouTubeIcon,
-} from "~/components/Icon";
+} from "../Icons";
 
 
 
