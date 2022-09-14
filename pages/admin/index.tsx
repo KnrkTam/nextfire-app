@@ -8,6 +8,7 @@ import { useRouter } from 'next/router';
 import { UserContext } from '../../lib/context';
 import kebabCase from 'lodash.kebabcase';
 import toast from 'react-hot-toast';
+import Metatags from '../../components/Metatags';
 
 export default function AdminPostsPage(props) {
   return (
@@ -74,19 +75,22 @@ function CreateNewPost() {
     router.push(`/admin/${slug}`);
     }
   return (
-    <form className="rounded" onSubmit={createPost}>
-      <input
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
-        placeholder="Input your new article topic here"
-        className="rounded shadow"
-      />
-      <p className="mt-2">
-        <strong> Slug:</strong> {slug}
-      </p>
-      <button type="submit" disabled={!isValid} className="btn-green">
-        Create New Post
-      </button>
-    </form>
-  )
+    <>
+      <Metatags title={'Write Post'} description={null} />
+      <form className="rounded" onSubmit={createPost}>
+        <input
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+          placeholder="Input your new article topic here"
+          className="rounded shadow"
+        />
+        <p className="mt-2">
+          <strong> Slug:</strong> {slug}
+        </p>
+        <button type="submit" disabled={!isValid} className="btn-green">
+          Create New Post
+        </button>
+      </form>
+    </>
+  );
 }
