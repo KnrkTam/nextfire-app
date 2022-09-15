@@ -9,16 +9,16 @@ function MyApp({ Component, pageProps }) {
   const userData = useUserData();
 
   return (
-      <UserContext.Provider value={userData}>
-        <div className="flex w-full relative h-full min-h-screen">
-          <Sidebar />
-          <div className="flex m-auto">
-            <Component {...pageProps} />
-          </div>
+    <UserContext.Provider value={userData}>
+      <div className="relative flex h-full min-h-screen w-full">
+        <Sidebar />
+        <div className="flex m-auto">
+          <Component {...pageProps} />
         </div>
+      </div>
 
-        <Toaster />
-      </UserContext.Provider>
+      <Toaster />
+    </UserContext.Provider>
   );
 }
 

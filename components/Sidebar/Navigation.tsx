@@ -26,8 +26,8 @@ export function SidebarNavigation() {
         },
 
         {
-          href: "/testing",
-          label: "Testing",
+          href: "/bookmarks",
+          label: "Bookmarks",
           icon: BookmarksIcon,
           isActive: router.asPath.indexOf("/testing") >= 0,
           isExternal: false,
@@ -69,7 +69,8 @@ export function SidebarNavigation() {
   ];
 
   return (
-    <div className="flex-1 px-3 py-3 space-y-1">
+    <div className="flex-1 px-3 py-3 space-y-1 sticky">
+    {/* <div> */}
       {sections.map((section, i) => {
         return (
           <ul key={i} className="space-y-1">
