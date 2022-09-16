@@ -1,8 +1,8 @@
 # DevJourney
 ## Description 
-DevJourney is a simple application that inspired by [DEV](https://dev.to/) for developers to share their thoughts and giving feedback to each others. The project is for non-commerical usage and is open to everyone. 
+DevJourney is a borderline SaaS-ready web application with all sorts of features like user account management, comments, Firestore dtabase, caching, end-to-end tests, and so much more. It was originally inspired by [DEV](https://dev.to/) forum for myself to share thoughts and ideas of the learning process during coding. Signed in users are allowed to comment on or write posts. DevJourney playground is basically my own  playgrounf where I can figure out how web software works  where I can figure out how web software works and is open to everyone. 
 
-The aim of building this project was initially educational and have a first taste of using NoSQL database and data modeling in a reallife project.
+The aim of building this project was initially educational and have a first taste of using NoSQL database and data modeling in a reallife project. And it is currently updating (Sept, 2022) with a new
 
 
 ## Live Demo
@@ -23,11 +23,11 @@ The key features for this project are
 
 ## Tech Stacks
 
-- [React(TypeScript)] (https://reactjs.org/)
+- [React(TypeScript)](https://reactjs.org/)
 - [Next.JS](https://nextjs.org/)
 - [Firebase & Firestore](https://firebase.google.com)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [Vercel] (https://vercel.com/)
+- [Vercel](https://vercel.com/)
 
 ## Extensive material that helped me come up with this project
 - [Firestore & NoSQL database](https://www.youtube.com/watch?v=v_hR4K4auoQ&ab_channel=Firebase)
