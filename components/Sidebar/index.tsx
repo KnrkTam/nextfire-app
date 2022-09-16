@@ -5,6 +5,7 @@ import { UserContext, GlobalNavigationContext } from "../../lib/context";
 import TitleBar from "./TitleBar";
 import { SidebarNavigation } from "./Navigation";
 import UserFooter from "./UserFooter";
+import { SidebarOverlay } from "./Overlay";
 
 // Top navbar
 export default function Sidebar() {
@@ -26,6 +27,7 @@ export default function Sidebar() {
         <SidebarNavigation />
         <UserFooter user={user} username={username} />
       </nav>
+      <SidebarOverlay />
     </>
   );
 }
