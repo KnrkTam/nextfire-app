@@ -3,7 +3,6 @@ import Sidebar from "../components/Sidebar";
 import { Toaster } from "react-hot-toast";
 import { UserContext } from "../lib/context";
 import { useUserData } from "../lib/hooks";
-import { createTheme, NextUIProvider } from "@nextui-org/react";
 
 function MyApp({ Component, pageProps }) {
   const userData = useUserData();

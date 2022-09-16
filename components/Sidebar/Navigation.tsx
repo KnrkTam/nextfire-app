@@ -29,7 +29,7 @@ export function SidebarNavigation() {
           href: "/bookmarks",
           label: "Bookmarks",
           icon: BookmarksIcon,
-          isActive: router.asPath.indexOf("/testing") >= 0,
+          isActive: router.asPath.indexOf("/bookmarks") >= 0,
           isExternal: false,
         },
 
