@@ -9,9 +9,9 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <UserContext.Provider value={userData}>
-      <div className="relative flex h-full min-h-screen max-h-screen w-full top-0">
+      <div className="fixed flex h-full min-h-screen max-h-screen w-full top-0 ">
         <Sidebar />
-        <div className="flex m-auto px-[20%] py-5 overflow-y-auto max-h-screen ">
+        <div className="flex overflow-y-auto max-h-screen px-20">
           <Component {...pageProps} />
         </div>
       </div>

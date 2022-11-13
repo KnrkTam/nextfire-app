@@ -25,7 +25,6 @@ export async function getServerSideProps(context) {
 export default function Home(props) {
   const [posts, setPosts] = useState(props.posts);
   const [loading, setLoading] = useState(false);
-
   const [postsEnd, setPostsEnd] = useState(false);
 
   const getMorePosts = async () => {
@@ -59,7 +58,7 @@ export default function Home(props) {
   // }
 
   return (
-    <div className=''>
+    <div className='w-screen'>
       <Metatags title={posts.title} description={posts.title} />
       <Announcement  />
       <PostFeed posts={posts} admin={false} />
