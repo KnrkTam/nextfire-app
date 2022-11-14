@@ -48,11 +48,71 @@ export default function BookmarksList() {
       comment: "good",
       url: "https://kenricktam.vercel.app/",
     },
+    {
+      id: "77777",
+      title: "77777",
+      comment: "good",
+      url: "https://kenricktam.vercel.app/",
+    },
+    {
+      id: "77777",
+      title: "77777",
+      comment: "good",
+      url: "https://kenricktam.vercel.app/",
+    },
+    {
+      id: "77777",
+      title: "77777",
+      comment: "good",
+      url: "https://kenricktam.vercel.app/",
+    },
+    {
+      id: "77777",
+      title: "77777",
+      comment: "good",
+      url: "https://kenricktam.vercel.app/",
+    },
+    {
+      id: "77777",
+      title: "77777",
+      comment: "good",
+      url: "https://kenricktam.vercel.app/",
+    },
+    {
+      id: "77777",
+      title: "77777",
+      comment: "good",
+      url: "https://kenricktam.vercel.app/",
+    },
+    {
+      id: "77777",
+      title: "77777",
+      comment: "good",
+      url: "https://kenricktam.vercel.app/",
+    },
+    {
+      id: "77777",
+      title: "77777",
+      comment: "good",
+      url: "https://kenricktam.vercel.app/",
+    },
+    {
+      id: "77777",
+      title: "77777",
+      comment: "good",
+      url: "https://kenricktam.vercel.app/",
+    },
+    {
+      id: "77777",
+      title: "77777",
+      comment: "good",
+      url: "https://kenricktam.vercel.app/",
+    },
   ];
 
   return bookmarks
-    ? bookmarks.map((bookmark) => (
-        <BookmarkItems key={bookmark.id} bookmark={bookmark}  />
+    ? bookmarks.map((bookmark, j) => (
+        <BookmarkItems key={j} bookmark={bookmark}  />
       ))
     : <></>;
 }
@@ -61,7 +121,7 @@ function BookmarkItems({ bookmark }) {
   return (
     <Link href={`/bookmarks/${bookmark.id}`}>
       <a className="flex space-x-3 border-b border-gray-100 py-3 px-3.5 text-sm dark:border-gray-900 lg:rounded-lg lg:border-none lg:py-2 sm:hover:bg-gray-200 sm:dark:hover:bg-gray-800">
-        Test
+        Test {" "}
         {bookmark.title}
       </a>
     </Link>

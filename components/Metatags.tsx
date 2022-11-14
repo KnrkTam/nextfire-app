@@ -10,7 +10,7 @@ interface MetaTagesProps {
 const MetaTags:FC<MetaTagesProps> = (props) => {
   return (
     <Head>
-        <title>{props.title ? props.title + ' | '  : null } DevJourney</title>
+        <title>{props.title ? props.title + ' | '  : null } Kenrick Tam | DevJourney</title>
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@kenrick_demo_dev" />
         <meta name="twitter:title" content={ props.title } />

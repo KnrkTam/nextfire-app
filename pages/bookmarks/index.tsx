@@ -4,7 +4,7 @@ import BookmarksList from '../../components/Bookmarks/BookmarksList';
 
 export default function index({page}) {
   return (
-    <div>
+    <div className="left-0 absolute">
       <ListDetailView
         list={<BookmarksList />}
         detail={page}

@@ -58,7 +58,7 @@ export default function Home(props) {
   // }
 
   return (
-    <div className='w-screen'>
+    <div className='mx-[10%]'>
       <Metatags title={posts.title} description={posts.title} />
       <Announcement  />
       <PostFeed posts={posts} admin={false} />

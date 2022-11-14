@@ -35,7 +35,7 @@ export default function UserProfilePage({ user, posts }) {
 
     return (
       <main>
-        <Metatags title={`${user.username} | Nextfire-blog`}/>
+        <Metatags title={`${user.username} | Dev Journey`}/>
         <UserProfile user={user}/>
         <PostFeed posts={posts} />
       </main>

@@ -9,14 +9,13 @@ export default function Enter(props) {
 
   // const user = null;
   // const username = null;
-
   // 1. user signed out <SignInButton />
   // 2. user signed in, but missing username <UsernameForm />
   // 3. user signed in, has username <SignOutButton />
   
   return (
     <main>
-      <div className="flex justify-center w-full" >
+      <div className="flex justify-center w-full items-center h-screen" >
       {user ? 
         !username ? <UsernameForm /> : <SignOutButton /> 
         : 

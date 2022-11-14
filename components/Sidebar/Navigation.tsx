@@ -11,7 +11,7 @@ import {
   WritingIcon,
 } from "../Icons";
 
-export function SidebarNavigation() {
+export function SidebarNavigation(token: string | null) {
   const router = useRouter();
   const sections = [
     {
@@ -23,6 +23,7 @@ export function SidebarNavigation() {
           icon: HomeIcon,
           isActive: router.asPath === "/",
           isExternal: false,
+          display: true,
         },
 
         {
@@ -31,14 +32,15 @@ export function SidebarNavigation() {
           icon: BookmarksIcon,
           isActive: router.asPath.indexOf("/bookmarks") >= 0,
           isExternal: false,
+          display: true,
         },
-
         {
           href: "/admin",
           label: "Write Post",
           icon: CritIcon,
           isActive: router.asPath.indexOf("/admin") >= 0,
           isExternal: false,
+          display: token.length > 0,
         },
       ],
     },
@@ -50,12 +52,14 @@ export function SidebarNavigation() {
           label: "GitHub",
           icon: GitHubIcon,
           isExternal: true,
+          display: true,
         },
         {
           href: "https://kenricktam.vercel.app/",
           label: "Resume",
           icon: WritingIcon,
           isExternal: true,
+          display: true,
         },
 
         {
@@ -63,6 +67,7 @@ export function SidebarNavigation() {
           label: "Linkedin",
           icon: LinkedInIcon,
           isExternal: true,
+          display: true,
         },
       ],
     },

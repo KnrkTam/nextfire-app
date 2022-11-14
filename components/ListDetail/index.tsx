@@ -1,4 +1,5 @@
-import * as React from "react";
+import { useRef } from "react";
+import TitleBar from "../Sidebar/TitleBar";
 
 interface Props {
   list: React.ReactElement | null;
@@ -7,20 +8,24 @@ interface Props {
 }
 
 export function ListDetailView({ list, detail, hasDetail = false }: Props) {
-  // console.log(list, detail, hasDetail)
+  const scrollContainerRef = useRef(null);
+
   return (
-    <div className="flex w-full">
-      {list && (
-        <div
-          id="list"
-          className={`bg-dots ${
-            hasDetail ? "hidden lg:flex" : "min-h-screen w-full"
-          }`}
-        >
-          {list}
-        </div>
-      )}
-      {detail}
-    </div>
+    <>
+      <TitleBar scrollContainerRef={scrollContainerRef} title="Bookmarks" />
+      <div className="flex min-w-[15rem]">
+        {list && (
+          <div
+            id="list"
+            className={`bg-zinc-100 ${
+              hasDetail ? "hidden lg:flex" : "min-h-screen w-full"
+            }`}
+          >
+            <div className="space-y-11 px-2">{list}</div>
+          </div>
+        )}
+        {detail}
+      </div>
+    </>
   );
 }
